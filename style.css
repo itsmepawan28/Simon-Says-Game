@@ -1,0 +1,133 @@
+*{
+    text-align: center;
+}
+
+body{
+    background-image: url("/assets/bg.jpg") ;
+}
+
+#h1{
+    color: #f99b45;
+    /* horizontal shadow vertical shadow blur effect and color */
+    text-shadow: 2px 2px 15px rgb(7, 101, 225);  
+}
+
+#h2{
+    color: rgb(5, 236, 213);
+    /* horizontal shadow vertical shadow blur effect and color */
+    text-shadow: 2px 2px 5px rgb(49, 3, 231);
+}
+
+#inputBox{
+    height: 2rem;
+    width: 19rem;
+    color: dimgray;
+    font-size: 15px;
+    font-weight: 900;
+    background-color: gainsboro;
+    border: 5px solid goldenrod;
+    border-radius: 25px;
+
+}
+
+#inputBox:hover{
+    
+    border-radius: 30%;
+    /* background-image: linear-gradient(direction, color-1, color-2, ...); */
+    background-image: linear-gradient(to right, red , rgb(197, 197, 60));
+    border: 5px solid rgb(2, 58, 69);
+}
+
+#inputBox::placeholder{
+    color: black;
+    opacity: 1;
+}
+
+#play{
+    margin-top: 1.5rem;
+    height: 3rem;
+    width: 6rem;
+    font-size: larger;
+    font-weight: 700;
+    cursor: pointer;
+    /* background-image: linear-gradient(direction, color-1, color-2, ...); */
+    background-image: linear-gradient(to right, red , rgb(197, 197, 60));
+    color: black;
+    border: 5px rgb(235, 193, 7) solid;
+    border-radius: 15px;   
+}
+
+#play:hover{
+    border-radius: 35%;
+    /* background-image: linear-gradient(direction, color-1, color-2, ...); */
+    background-image: linear-gradient(to right, yellow , red);
+    border: 5px rgb(2, 58, 69) solid;
+    color: white;
+}
+
+#parentDiv{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.buttons{
+    height: 200px;
+    width: 200px;
+    margin: 15px;
+    border: 10px solid black;
+    border-radius: 30%;
+    cursor: pointer;
+    /* background-color: aqua; */
+}
+
+
+/* .systemFlash{
+    background-color: white;
+} */
+
+.systemFlash {
+    animation: gameflashAnimation 1s ease;
+}
+
+@keyframes gameflashAnimation {
+
+    0%,
+    100% {
+        opacity: 1;
+        background-color: initial;
+        /* Keeps the original background color */
+    }
+
+    50% {
+        opacity: 0;
+        background-color: rgb(8, 225, 236);
+        /* Changes background color to green */
+    }
+}
+
+
+/* .myFlash{
+    background-color: aquamarine;
+} */
+
+.myFlash {
+    animation: userflashAnimation 1s ease;
+}
+
+@keyframes userflashAnimation {
+
+    0%,
+    100% {
+        opacity: 1;
+        background-color: initial;
+        /* Keeps the original background color */
+    /}
+
+    50% {
+        opacity: 0;
+        background-color: rgb(6, 235, 6);
+        /* Changes background color to green */
+    }
+}

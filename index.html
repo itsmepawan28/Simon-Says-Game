@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brain Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 id="h1">Test Your Memory</h1>
+
+    <h2 id="h2">
+      Enter any number greater than 1 and press play to start the game.
+    </h2>
+
+    <input
+      type="number"
+      placeholder="enter any number to create box"
+      id="inputBox"
+    />
+
+    <button id="play">Play</button>
+
+    <div id="parentDiv"></div>
+
+    <audio src="/assets/game.wav" id="game"></audio>
+    <audio src="/assets/user.wav" id="user"></audio>
+    <audio src="/assets/error.mp3" id="error"></audio>
+    <script src="app.js"></script>
+  </body>
+</html>
